@@ -1,5 +1,10 @@
 "use client";
-
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -24,12 +29,27 @@ export default function Hero() {
     >
       {/* Fixed Navbar */}
       <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-12 py-4 z-50 bg-blue-900/40 backdrop-blur-lg shadow-md">
-        <div className="text-2xl font-bold text-white">HotelLogo</div>
+        <div className="text-2xl font-bold text-white"> <Image src="/logo.png" alt="logo" width={46} height={50}/> </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-white text-lg font-medium">
           <li className="hover:text-yellow-400 transition cursor-pointer">Home</li>
-          <li className="hover:text-yellow-400 transition cursor-pointer">Rooms</li>
+          <li className="hover:text-yellow-400 transition cursor-pointer"><DropdownMenu>
+  <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
+    Rooms
+  </DropdownMenuTrigger>
+  <DropdownMenuContent className="bg-blue-900 text-white border-none shadow-lg">
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Deluxe Room
+    </DropdownMenuItem>
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Executive Suite
+    </DropdownMenuItem>
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Presidential Suite
+    </DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu></li>
           <li className="hover:text-yellow-400 transition cursor-pointer">Dining</li>
           <li className="hover:text-yellow-400 transition cursor-pointer">Contact</li>
         </ul>
@@ -52,7 +72,22 @@ export default function Hero() {
                   Home
                 </a>
                 <a href="#" className="hover:text-yellow-400 transition">
-                  Rooms
+                 <DropdownMenu>
+  <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
+    Rooms
+  </DropdownMenuTrigger>
+  <DropdownMenuContent className="bg-blue-900 text-white border-none shadow-lg">
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Deluxe Room
+    </DropdownMenuItem>
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Executive Suite
+    </DropdownMenuItem>
+    <DropdownMenuItem className="hover:bg-yellow-400 hover:text-blue-900 transition cursor-pointer">
+      Presidential Suite
+    </DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>
                 </a>
                 <a href="#" className="hover:text-yellow-400 transition">
                   Dining
@@ -85,7 +120,7 @@ export default function Hero() {
           }}
         >
           <Image
-            src="/hotelmain.fw.png"
+            src="/hotelIju.png"
             alt="Hotel"
             width={1200}
             height={800}
