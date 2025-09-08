@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Single Room",
+    "price": "₦20,000 / night",
+    "image": "/rooms/deluxe.jpg",
+    "description": "A luxurious room with modern decor, king-size bed, and stunning city views."
+  },
+  {
+    "id": 2,
+    "name": "Standard Suite",
+    "price": "₦22,500 / night",
+    "image": "/rooms/executive.jpg",
+    "description": "Spacious suite with a private lounge, marble bathroom, and premium amenities."
+  },
+  {
+    "id": 3,
+    "name": "Executive Suite",
+    "price": "₦30,000 / night",
+    "image": "/rooms/presidential.jpg",
+    "description": "Experience ultimate luxury with a private terrace, Jacuzzi, and personal butler service."
+  }
+]
