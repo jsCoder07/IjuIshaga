@@ -1,3 +1,9 @@
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -12,23 +18,30 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Welcome to Iju Ishaga City Lodge",
-  description: "Iju Ishaga City Lodge; Where comfort and luxury meets hospitality.",
-};
+// export const metadata: Metadata = {
+//   title: "Welcome to Iju Ishaga City Lodge",
+//   description: "Iju Ishaga City Lodge; Where comfort and luxury meets hospitality.",
+// };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <AnimatePresence mode="wait">
+      <html>
+        <body>
+ <motion.div
+        key={pathname}
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -30 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         {children}
-      </body>
-    </html>
+      </motion.div>
+        </body>
+      </html>
+     
+    </AnimatePresence>
   );
 }
