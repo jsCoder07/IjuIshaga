@@ -15,15 +15,7 @@ export default function Amenities() {
   return (
     <section className="py-20 bg-blue-50 text-blue-900">
       <div className="container mx-auto px-6 text-center">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          World-Class <span className="text-yellow-500">Amenities</span>
-        </motion.h2>
+      
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {amenities.map((amenity, index) => (
@@ -43,4 +35,5 @@ export default function Amenities() {
       </div>
     </section>
   );
+
 }
