@@ -39,7 +39,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 1 }}
             className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200"
           >
-            Welcome to ourIjus Ishaga City Lodge — where comfort meets sophistication.
+            Welcome to Iju Ishaga City Lodge — where comfort meets sophistication.
              <Image
                       src="/hotelIju.png"
                       alt="Hotel"
