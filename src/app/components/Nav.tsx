@@ -64,7 +64,7 @@ const Nav = () => {
                   <Link href="/">Home</Link>
                 </a>
                 <a href="#" className="hover:text-yellow-400 transition">
-                  <Link href="/rooms">Roomss</Link>
+                  <Link href="/rooms">Rooms</Link>
                  {/* <DropdownMenu>
   <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
     Rooms
@@ -105,3 +105,4 @@ const Nav = () => {
 }
 
 export default Nav
+
