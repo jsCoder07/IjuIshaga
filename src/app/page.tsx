@@ -7,6 +7,7 @@ import About from "./components/About";
 import Amenities from "./components/Ammenities";
 import Nav from "./components/Nav";
 import Head from "next/head";
+import Link from "next/link";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
@@ -187,6 +188,7 @@ export default function Home() {
           >
             Experience the pinnacle of comfort, elegance, and hospitality.
           </motion.p>
+          <Link href="/booking">
           <motion.button
             initial="hidden"
             whileInView="visible"
@@ -197,6 +199,7 @@ export default function Home() {
           >
             Reserve Now
           </motion.button>
+            </Link>
         </div>
       </footer>
     </main>
