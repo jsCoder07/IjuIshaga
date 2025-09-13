@@ -6,7 +6,7 @@ import FeaturedRooms from "./components/FeaturedRooms";
 import About from "./components/About";
 import Amenities from "./components/Ammenities";
 import Nav from "./components/Nav";
-
+import Head from "next/head";
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
@@ -14,8 +14,13 @@ const fadeUp = {
 
 export default function Home() {
   return (
-    
+    <>
+    <Head>
+        <title>Client Side Page</title>
+        <meta name="description" content="Metadata for client page" />
+      </Head>
     <main className="overflow-hidden">
+      
       <Nav/>
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-900 via-blue-950 to-black text-white">
@@ -39,7 +44,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 1 }}
             className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200"
           >
-            Welcome to Iju Ishaga City Lodge — where comfort meets sophistication.
+            Welcome to our elegant hotel in Nigeria — where comfort meets sophistication.
              <Image
                       src="/hotelIju.png"
                       alt="Hotel"
@@ -65,10 +70,10 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-yellow-500">Us</span>
+              About <span className="text-yellow-500">Our Hotel</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Nestled in the heart of Nigeria, Iju Ishaga City Lodge offers world-class
+              Nestled in the heart of Nigeria, our luxury hotel offers world-class
               amenities, stunning architecture, and unmatched hospitality.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -195,5 +200,6 @@ export default function Home() {
         </div>
       </footer>
     </main>
+    </>
   );
 }

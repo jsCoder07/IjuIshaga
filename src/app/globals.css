@@ -18,6 +18,7 @@
   background-size: 600% 600%;
   animation: gradientBackground 15s ease infinite;
 }
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -61,6 +62,9 @@
 }
 
 :root {
+    --navy-950: #0a1f44;
+  --navy-800: #1a2f5a;
+  --gold-400: #d4af37;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -128,7 +132,29 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+/* Custom theme colors */
 
+
+/* Utilities */
+.bg-navy-950 {
+  background-color: var(--navy-950);
+}
+
+.bg-navy-800 {
+  background-color: var(--navy-800);
+}
+
+.text-gold-400 {
+  color: var(--gold-400);
+}
+
+.border-gold-400\/30 {
+  border-color: rgb(212 175 55 / 0.3);
+}
+
+.border-gold-400\/20 {
+  border-color: rgb(212 175 55 / 0.2);
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;

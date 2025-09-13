@@ -22,7 +22,8 @@ const Nav = () => {
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-white text-lg font-medium">
           <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/">Home</Link></li>
-          <li className="hover:text-yellow-400 transition cursor-pointer"><DropdownMenu>
+          <li className="hover:text-yellow-400 transition cursor-pointer">
+            {/* <DropdownMenu>
   <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
     Rooms
   </DropdownMenuTrigger>
@@ -37,15 +38,18 @@ const Nav = () => {
       Presidential Suite
     </DropdownMenuItem>
   </DropdownMenuContent>
-</DropdownMenu></li>
-          <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/Dinning">Dining</Link></li>
-          <li className="hover:text-yellow-400 transition cursor-pointer">Contact</li>
+</DropdownMenu> */}
+<Link href="/rooms">Rooms</Link>
+</li>
+ <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/gallery">Gallery</Link></li>
+         
+          <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/contact">Contact</Link></li>
         </ul>
-
+<Link href="/booking">
         <Button className="hidden md:block bg-yellow-400 text-blue-900 hover:bg-yellow-500 rounded-full px-6 py-2 font-bold">
           Book Now
         </Button>
-
+</Link>
         {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
@@ -60,7 +64,8 @@ const Nav = () => {
                   <Link href="/">Home</Link>
                 </a>
                 <a href="#" className="hover:text-yellow-400 transition">
-                 <DropdownMenu>
+                  <Link href="/rooms">Roomss</Link>
+                 {/* <DropdownMenu>
   <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
     Rooms
   </DropdownMenuTrigger>
@@ -75,17 +80,22 @@ const Nav = () => {
       Presidential Suite
     </DropdownMenuItem>
   </DropdownMenuContent>
-</DropdownMenu>
+</DropdownMenu> */}
                 </a>
-                <Link href="/Dinning">Dining</Link>
+               
                 <a href="#" className="hover:text-yellow-400 transition">
-                  Contact
+                  <Link href="/contact">Contact</Link>
+                </a>
+                <a href="#" className="hover:text-yellow-400 transition">
+                  <Link href="/gallery">Gallery</Link>
                 </a>
               </nav>
               <div className="mt-8">
+                <Link href="/booking">
                 <Button className="w-full bg-yellow-400 text-blue-900 hover:bg-yellow-500 rounded-full px-6 py-3 font-bold">
                   Book Now
                 </Button>
+                </Link>
               </div>
             </SheetContent>
           </Sheet>

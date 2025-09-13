@@ -15,7 +15,7 @@ export default function Amenities() {
   return (
     <section className="py-20 bg-blue-50 text-blue-900">
       <div className="container mx-auto px-6 text-center">
-      
+    
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {amenities.map((amenity, index) => (
@@ -35,5 +35,4 @@ export default function Amenities() {
       </div>
     </section>
   );
-
 }

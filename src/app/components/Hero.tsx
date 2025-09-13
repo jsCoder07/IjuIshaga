@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useRef } from "react";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 const headingText = "Welcome to IjuIshaga City Lodge";
 const headingWords = headingText.split(" ");
@@ -33,7 +34,7 @@ export default function Hero() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-white text-lg font-medium">
-          <li className="hover:text-yellow-400 transition cursor-pointer">Home</li>
+          <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/">Home</Link></li>
           <li className="hover:text-yellow-400 transition cursor-pointer"><DropdownMenu>
   <DropdownMenuTrigger className="hover:text-yellow-400 transition cursor-pointer">
     Rooms
@@ -50,7 +51,7 @@ export default function Hero() {
     </DropdownMenuItem>
   </DropdownMenuContent>
 </DropdownMenu></li>
-          <li className="hover:text-yellow-400 transition cursor-pointer">Dining</li>
+          <li className="hover:text-yellow-400 transition cursor-pointer"><Link href="/Dinning">Dining</Link></li>
           <li className="hover:text-yellow-400 transition cursor-pointer">Contact</li>
         </ul>
 

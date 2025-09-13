@@ -7,6 +7,8 @@ import { usePathname } from "next/navigation";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <AnimatePresence mode="wait">
       <html>
         <body>
+          <Nav/>
  <motion.div
         key={pathname}
         initial={{ opacity: 0, y: 30 }}
@@ -39,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       >
         {children}
       </motion.div>
+      <Footer/>
         </body>
       </html>
      
