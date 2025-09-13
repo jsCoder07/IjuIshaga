@@ -45,7 +45,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 1 }}
             className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200"
           >
-            Welcome to our elegant hotel in Nigeria — where comfort meets sophistication.
+            Welcome to Iju Ishaga Hotel hotel in Nigeria — where comfort meets sophistication.
              <Image
                       src="/hotelIju.png"
                       alt="Hotel"
@@ -71,10 +71,10 @@ export default function Home() {
             transition={{ duration: 1 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-yellow-500">Our Hotel</span>
+              About <span className="text-yellow-500">Iju Ishaga Hotel</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Nestled in the heart of Nigeria, our luxury hotel offers world-class
+              Nestled in the heart of Nigeria, Iju Ishaga hotel offers world-class
               amenities, stunning architecture, and unmatched hospitality.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
