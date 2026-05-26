@@ -34,9 +34,9 @@ export default function ContactPage() {
           </form>
 
           <div className="mt-12 text-center text-gray-700">
-            <p className="flex justify-evenly items-baseline"><GiRotaryPhone /> +234 703 377 7772</p>
-            <p className="flex justify-evenly items-baseline"><MdEmail /> reservations@ijuishagacitylodge.com.ng</p>
-            <p className="flex justify-evenly items-baseline"><ImLocation2 /> 221 Iju-Ishaga Road (Gudugba Bus Stop) Ifako-Ijaiye, Lagos</p>
+            <p className="flex justify-between items-baseline"><GiRotaryPhone /> +234 703 377 7772</p>
+            <p className="flex justify-between items-baseline"><MdEmail /> reservations@ijuishagacitylodge.com.ng</p>
+            <p className="flex justify-between items-baseline"><ImLocation2 /> 221 Iju-Ishaga Road (Gudugba Bus Stop) Ifako-Ijaiye, Lagos</p>
           </div>
         </div>
       </section>
