@@ -32,9 +32,9 @@ export default function ContactPage() {
           </form>
 
           <div className="mt-12 text-center text-gray-700">
-            <p>📞 +234 123 456 789</p>
-            <p>📧 reservations@luxurystayhotel.com</p>
-            <p>📍 Victoria Island, Lagos, Nigeria</p>
+            <p>📞 +234 703 377 7772</p>
+            <p>📧 reservations@ijuishagacitylodge.com.ng</p>
+            <p>📍 Gudugba</p>
           </div>
         </div>
       </section>
