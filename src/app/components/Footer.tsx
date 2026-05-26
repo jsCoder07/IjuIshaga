@@ -66,9 +66,9 @@ export default function Footer() {
   transition={{ duration: 0.5 }}>
           <h3 className="text-lg font-semibold text-gold-400 mb-4">Contact</h3>
           <ul className="space-y-2 text-sm">
-            <li className="flex justify-between"><CiLocationOn /> 221 Iju-Ishaga Road (Gudugba Bus Stop) Ifako-Ijaiye, Lagos</li>
-            <li className="flex justify-between"><GiRotaryPhone /> +234 703 377 7772</li>
-            <li className="flex justify-between"><MdEmail /> info@ijuishagacitylodge.com.ng</li>
+            <li className="flex justify-between items-baseline"><CiLocationOn /> 221 Iju-Ishaga Road Gudugba Bus Stop</li>
+            <li className="flex justify-between items-baseline"><GiRotaryPhone /> +234 703 377 7772</li>
+            <li className="flex justify-between items-baseline"><MdEmail /> info@ijuishagacitylodge.com.ng</li>
           </ul>
         </motion.div>
 
