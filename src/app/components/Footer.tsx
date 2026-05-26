@@ -4,6 +4,9 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { CiLocationOn } from "react-icons/ci";
+import { GiRotaryPhone } from "react-icons/gi";
+import { MdEmail } from "react-icons/md";
 
 const container = {
   hidden: { opacity: 0, y: 50 },
@@ -63,9 +66,9 @@ export default function Footer() {
   transition={{ duration: 0.5 }}>
           <h3 className="text-lg font-semibold text-gold-400 mb-4">Contact</h3>
           <ul className="space-y-2 text-sm">
-            <li>📍 Iju Ishaga Lagos Nigeria</li>
-            <li>📞 +234 800 123 4567</li>
-            <li>✉️ info@ijuishagacitylodge.com..ng</li>
+            <li><CiLocationOn /> 221 Iju-Ishaga Road (Gudugba Bus Stop) Ifako-Ijaiye, Lagos</li>
+            <li><GiRotaryPhone /> +234 703 377 7772</li>
+            <li><MdEmail /> info@ijuishagacitylodge.com.ng</li>
           </ul>
         </motion.div>
 
