@@ -4,7 +4,9 @@ import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-
+import { MdEmail } from "react-icons/md";
+import { GiRotaryPhone } from "react-icons/gi";
+import { ImLocation2 } from "react-icons/im";
 
 
 export default function ContactPage() {
@@ -32,9 +34,9 @@ export default function ContactPage() {
           </form>
 
           <div className="mt-12 text-center text-gray-700">
-            <p>📞 +234 703 377 7772</p>
-            <p>📧 reservations@ijuishagacitylodge.com.ng</p>
-            <p>📍 Gudugba</p>
+            <p><GiRotaryPhone /> +234 703 377 7772</p>
+            <p><MdEmail /> reservations@ijuishagacitylodge.com.ng</p>
+            <p><ImLocation2 /> 221 Iju-Ishaga Road (Gudugba Bus Stop) Ifako-Ijaiye, Lagos</p>
           </div>
         </div>
       </section>
