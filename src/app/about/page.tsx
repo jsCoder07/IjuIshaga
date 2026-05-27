@@ -17,7 +17,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             viewport={{ once: false }}
           >
-            About <span className="text-yellow-500">Luxury Stay</span>
+            About <span className="text-yellow-500">Iju Ishaga City Lodge</span>
           </motion.h1>
 
           <motion.p
@@ -27,7 +27,7 @@ export default function AboutPage() {
             transition={{ duration: 1 }}
             viewport={{ once: false }}
           >
-            Nestled in the heart of Nigeria, Luxury Stay Hotel offers more than just
+            Nestled in the heart of Nigeria, Iju Ishaga City Lodge Hotel offers more than just
             accommodation — we offer an experience. From our elegant architecture
             to our world-class hospitality, every detail is designed to bring comfort,
             sophistication, and unforgettable memories.
