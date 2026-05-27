@@ -20,10 +20,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: 'Iju Ishaga City Lodge | Formerly WAB Hotel Lagos',
-  description: 'Stay at Iju Ishaga City Lodge (formerly WAB Hotel) at 221 Iju-Ishaga Road, Gudugba. Enjoy luxury rooms, a premium bar, top security, and affordable hotel rates.',
-}
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
