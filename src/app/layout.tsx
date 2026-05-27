@@ -28,6 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <AnimatePresence mode="wait">
       <html>
+        <head>
+        <title>Iju Ishaga City Lodge | Formerly WAB Hotel Lagos</title>
+        <meta name="description" content="Stay at Iju Ishaga City Lodge (formerly WAB Hotel) at 221 Iju-Ishaga Road, Gudugba. Enjoy luxury rooms, a premium bar, top security, and affordable hotel rates." />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
         <body>
           <Nav/>
  <motion.div
