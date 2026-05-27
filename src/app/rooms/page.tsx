@@ -38,7 +38,7 @@ export default function Rooms() {
                   <CardTitle className="text-gold-400 mt-4">{room.name}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p>{room.description}</p>
+                  <p className="text-white">{room.description}</p>
                   <p className="mt-4 text-gold-400 font-semibold">₦{room.price}/night</p>
                 </CardContent>
               </Card>
