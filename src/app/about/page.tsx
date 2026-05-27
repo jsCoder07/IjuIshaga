@@ -11,7 +11,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[url('/textures/marble.png')] opacity-10"></div>
         <div className="relative z-10 container mx-auto px-6">
           <motion.h1
-            className="text-5xl font-bold text-center text-blue-900 mb-12"
+            className="text-4xl font-bold mb-6 text-gray-900"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -21,7 +21,7 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.p
-            className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 text-center"
+            className="text-lg text-gray-700 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -34,7 +34,7 @@ export default function AboutPage() {
     From WAB Hotel to Premium Affordable Luxury
   </h2>
            <motion.p
-            className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 text-center"
+           className="text-lg text-gray-700 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -45,7 +45,7 @@ export default function AboutPage() {
           </motion.p>
 
            <motion.p
-            className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-700 text-center"
+            className="text-lg text-gray-700 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
