@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 export default function AboutPage() {
   return (
     <main className="bg-gradient-to-b from-white via-gray-50 to-white">
-      <section className="relative py-40">
+      <section className="relative h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-900 via-blue-950 to-black text-white">
+        <div className="absolute inset-0 bg-[url('/textures/gold-pattern.png')] opacity-10 mix-blend-overlay"></div>
         <div className="absolute inset-0 bg-[url('/textures/marble.png')] opacity-10"></div>
         <div className="relative z-10 container mx-auto px-6">
           <motion.h1
-            className="text-4xl font-bold mb-6 text-gray-900"
+            className="text-4xl font-bold mb-6 text-gray-200"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -21,7 +22,7 @@ export default function AboutPage() {
           </motion.h1>
 
           <motion.p
-            className="text-lg text-gray-700 leading-relaxed mb-6"
+            className="text-lg text-gray-300 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -30,11 +31,11 @@ export default function AboutPage() {
            For over a generation, <strong>221 Iju-Ishaga Road (Gudugba Bus Stop)</strong> was known to locals, travelers, and Lagos residents as the iconic <strong>WAB Hotel</strong>. 
             As a landmark of hospitality in the Iju Ishaga area, the venue built a reputation for community, rest, and convenience.
           </motion.p>
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-200">
     From WAB Hotel to Premium Affordable Luxury
   </h2>
            <motion.p
-           className="text-lg text-gray-700 leading-relaxed mb-6"
+           className="text-lg text-gray-200 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -45,7 +46,7 @@ export default function AboutPage() {
           </motion.p>
 
            <motion.p
-            className="text-lg text-gray-700 leading-relaxed mb-6"
+            className="text-lg text-gray-200 leading-relaxed mb-6"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -55,11 +56,11 @@ export default function AboutPage() {
              have evolved into world-class standards, our commitment to being the most reliable hotel landmark in Ifako-Ijaiye remains unchanged.
           </motion.p>
 
-          <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-4 text-gray-300">
     Why Guests Choose Our Iju-Ishaga Hotel Location
   </h2>
   
-  <ul className="list-disc pl-6 text-lg text-gray-700 space-y-2 mb-6">
+  <ul className="list-disc pl-6 text-lg text-gray-200 space-y-2 mb-6">
     <li><strong>Historic Landmark:</strong> Effortless to locate for drivers, local transport, and delivery services due to our famous heritage as the former WAB Hotel.</li>
     <li><strong>Prime Lagos Accessibility:</strong> Strategically situated right along the main Iju-Ishaga Road near Gudugba.</li>
     <li><strong>Unmatched Comfort & Security:</strong> Upgraded infrastructure designed for ultimate peace of mind.</li>
