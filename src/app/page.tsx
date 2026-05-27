@@ -8,11 +8,15 @@ import Amenities from "./components/Ammenities";
 import Nav from "./components/Nav";
 import Head from "next/head";
 import Link from "next/link";
+import { Metadata } from 'next'
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
 };
-
+export const metadata = {
+  title: 'Iju Ishaga City Lodge | Formerly WAB Hotel Lagos',
+  description: 'Stay at Iju Ishaga City Lodge (formerly WAB Hotel) at 221 Iju-Ishaga Road, Gudugba. Enjoy luxury rooms, a premium bar, top security, and affordable hotel rates.',
+}
 export default function Home() {
   return (
     <>
