@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <main className="bg-gradient-to-b from-white via-gray-50 to-white py-40">
-      <section className="bg-gradient-to-br from-blue-900 via-blue-950 to-black text-white">
+    <main className="bg-gradient-to-b from-white via-gray-50 to-white py-20">
+      <section className="bg-gradient-to-br from-blue-900 via-blue-950 to-black text-white py-10">
         {/* <div className="absolute inset-0 bg-[url('/textures/gold-pattern.png')] opacity-10 mix-blend-overlay"></div> */}
         <div className="absolute inset-0 bg-[url('/textures/marble.png')] opacity-10"></div>
         <div className="relative z-10 container mx-auto px-6">
