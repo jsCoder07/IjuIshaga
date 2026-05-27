@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
     <Head>
-        <title>Client Side Page</title>
+        <title>Iju Ishaga City Lodge & Hotel (Formerly Wab Hotel)</title>
         <meta name="description" content="Metadata for client page" />
       </Head>
     <main className="overflow-hidden">
@@ -46,7 +46,7 @@ export default function Home() {
             transition={{ delay: 0.3, duration: 1 }}
             className="max-w-2xl mx-auto text-lg md:text-xl text-gray-200"
           >
-            Welcome to Iju Ishaga Hotel hotel in Nigeria — where comfort meets sophistication.
+            Welcome to Iju Ishaga City Lodge Hotel hotel Lagos — where comfort meets sophistication.
              <Image
                       src="/hotelIju.png"
                       alt="Hotel"
@@ -71,17 +71,15 @@ export default function Home() {
             variants={fadeUp}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              About <span className="text-yellow-500">Iju Ishaga Hotel</span>
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Nestled in the heart of Nigeria, Iju Ishaga hotel offers world-class
-              amenities, stunning architecture, and unmatched hospitality.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Whether you are here for business, relaxation, or adventure, we ensure
-              every moment is a memorable experience.
-            </p>
+           <h2 className="text-4xl md:text-5xl font-bold mb-6">
+  About <span className="text-yellow-500">Iju Ishaga City Lodge Hotel</span>
+</h2>
+<p className="text-lg text-gray-700 leading-relaxed mb-4">
+  Welcome to the newly upgraded <strong>Iju Ishaga City Lodge</strong>, proudly serving guests at 221 Iju-Ishaga Road, Gudugba Bus Stop. Known for years as the iconic <strong>WAB Hotel</strong>, our venue has been completely transformed to offer world-class amenities, premium luxury rooms, and unmatched Nigerian hospitality.
+</p>
+<p className="text-lg text-gray-700 leading-relaxed">
+  Whether you are visiting Lagos for business, looking for a premium event space, or seeking a relaxing getaway with top-tier security, we ensure every moment is a memorable experience. Discover the best affordable luxury hotel rates in Iju Ishaga today.
+</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
